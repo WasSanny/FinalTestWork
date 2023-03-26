@@ -36,7 +36,7 @@ string[] Newarray(string[] array)
 
 int ReadInt(string argument)
 {
-  Console.Write($"Введите {argument} ");
+  Console.Write($"{argument} ");
   int number;
 
   while(!int.TryParse(Console.ReadLine(), out number))
@@ -65,6 +65,6 @@ string String (string argument)
   return a; 
 }
 
-string[] array = new string[ReadInt("длинну массива:")];
+string[] array = new string[ReadInt("Задайте длинну массива:")];
 Console.WriteLine();
 Newarray(array);
